@@ -112,6 +112,12 @@ public class GameBoard {
         }
     }
 
+    public void temp(Cell2 cell) {
+        if (cell instanceof NumberCell) {
+            cell.updateNearbyLandMineCount(0);
+        }
+    }
+
     public String getSign(int rowIndex, int colIndex) {
         Cell2 cell = findCell(rowIndex, colIndex);
         return cell.getSign();
