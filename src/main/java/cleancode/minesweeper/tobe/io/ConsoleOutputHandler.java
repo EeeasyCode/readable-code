@@ -40,32 +40,32 @@ public class ConsoleOutputHandler implements OutputHandler {
     }
 
     @Override
-    public void printGameWinningComment() {
+    public void showGameWinningComment() {
         System.out.println("지뢰를 모두 찾았습니다. GAME CLEAR!");
     }
 
     @Override
-    public void printGameLosingComment() {
+    public void showGameLosingComment() {
         System.out.println("지뢰를 밟았습니다. GAME OVER!");
     }
 
     @Override
-    public void printCommentForSelectingCell() {
+    public void showCommentForSelectingCell() {
         System.out.println("선택할 좌표를 입력하세요. (예: a1)");
     }
 
     @Override
-    public void printCommentForUserAction() {
+    public void showCommentForUserAction() {
         System.out.println("선택한 셀에 대한 행위를 선택하세요. (1: 오픈, 2: 깃발 꽂기)");
     }
 
     @Override
-    public void printExceptionMessage(GameException e) {
+    public void showExceptionMessage(GameException e) {
         System.out.println(e.getMessage());
     }
 
     @Override
-    public void printSimpleMessage(String message) {
+    public void showSimpleMessage(String message) {
         System.out.println(message);
     }
 
